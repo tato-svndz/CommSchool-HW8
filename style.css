@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51,51,51);
+    height: 90px;
+}
+
+h1, li {
+    margin: 15px;
+    color: rgb(255,255,254);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+ul a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(255,255,254);
+    font-size: 15px;
+}
+
+ul a:hover {
+    background-color: rgb(255,99,98);
+}
+
+.welcome {
+    height: 200px;
+    color: rgb(255,255,254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(255,99,98);
+}
+
+.welcome a {
+    text-decoration: none;
+    color: rgb(255,99,98);
+    background-color: rgb(255,255,254);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.welcome a:hover {
+    color: rgb(255,255,254);
+    background-color: rgb(160, 63, 63);
+}
+
+.welcome > * {
+    margin: 10px;
+}
+
+.aboutMe {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(255,255,254);
+}
+
+.aboutMe > * {
+    margin: 15px;
+}
+
+.container {
+    margin-top: 25px;
+    background-color: rgb(255,255,254);
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container > * {
+    padding: 10px;
+}
+
+.picOne {
+    width: 225px;
+    height: 175px;
+    background-image: url(images/fjords.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    transition: transform 0.3s;
+}
+
+.picOne:hover {
+    transform: scale(1.1);
+}
+
+.picTwo {
+    width: 225px;
+    height: 175px;
+    background-image: url(images/forest.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    transition: transform 0.3s;
+}
+
+.picTwo:hover {
+    transform: scale(1.1);
+}
+
+.picThree {
+    width: 225px;
+    height: 175px;
+    background-image: url(images/northern.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    transition: transform 0.3s;
+}
+
+.picThree:hover {
+    transform: scale(1.1);
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.srvc h2 {
+    margin-top: 40px;
+    margin-left: 95px;
+}
+
+.contact {
+    height: 500px;
+    background-color: rgb(255,99,98);
+}
+
+.contact h2 {
+    margin-top: 40px;
+    padding-top: 50px;
+    margin-left: 95px;
+}
+
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .txtInput {
+    width: 175vh;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin: 20px 0;
+}
+
+.form textarea {
+    width: 175vh;
+    height: 150px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.submitBtn {
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255,99,98);
+    background-color: rgb(255,255,254);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: rgb(160, 63, 63);
+    color: rgb(255,255,254);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: rgb(255,255,254);
+    background-color: rgb(51,51,51);;
+}
