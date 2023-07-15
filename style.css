@@ -1,12 +1,13 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 body {
     background-color: lightgrey;
@@ -98,10 +99,15 @@ ul a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    transition: 0.3s;
 }
 
 .container > * {
     padding: 10px;
+}
+
+.container:hover {
+    box-shadow: 0 5px 20px grey;
 }
 
 .picOne {
@@ -114,9 +120,6 @@ ul a:hover {
     transition: transform 0.3s;
 }
 
-.picOne:hover {
-    transform: scale(1.1);
-}
 
 .picTwo {
     width: 225px;
@@ -126,10 +129,6 @@ ul a:hover {
     border-radius: 10px;
     margin-bottom: 35px;
     transition: transform 0.3s;
-}
-
-.picTwo:hover {
-    transform: scale(1.1);
 }
 
 .picThree {
@@ -142,7 +141,7 @@ ul a:hover {
     transition: transform 0.3s;
 }
 
-.picThree:hover {
+.picOne:hover, .picTwo:hover, .picThree:hover {
     transform: scale(1.1);
 }
 
